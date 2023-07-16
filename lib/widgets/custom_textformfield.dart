@@ -7,8 +7,8 @@ class CustomFormField extends StatelessWidget {
     Key? key,
     required this.label,
     required this.controller,
-    required this.assetIcon,
-    required this.hintText,
+    this.assetIcon,
+    this.hintText,
     required this.title,
     this.obscureText = false,
     this.textInputType = TextInputType.text,
@@ -19,8 +19,8 @@ class CustomFormField extends StatelessWidget {
   final String title;
   final bool obscureText;
   final TextEditingController controller;
-  final String assetIcon;
-  final String hintText;
+  final String? assetIcon;
+  final String? hintText;
   final TextInputType? textInputType;
   final TextInputAction? textInputAction;
 

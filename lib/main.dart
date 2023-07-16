@@ -10,7 +10,7 @@ import 'package:rope_access/blocs/jasa/jasa_bloc.dart';
 import 'package:rope_access/blocs/page/page_bloc.dart';
 import 'package:rope_access/blocs/product/product_bloc.dart';
 import 'package:rope_access/blocs/transaction/transaction_bloc.dart';
-import 'package:rope_access/pages/profile1.dart';
+import 'package:rope_access/pages/add_unttandance_planning.dart';
 import 'package:rope_access/repositories/auth/auth_repository.dart';
 import 'package:rope_access/repositories/cart/cart_repository.dart';
 import 'package:rope_access/repositories/jasa/jasa_repository.dart';
@@ -81,7 +81,7 @@ class _MyAppState extends State<MyApp> {
           ],
           child: const MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: Profile1(),
+            home: UntandancePlanning(),
           ),
           // child: MaterialApp.router(
           //   theme: widget.appTheme.dark,
