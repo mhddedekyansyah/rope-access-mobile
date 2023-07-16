@@ -10,6 +10,7 @@ import 'package:rope_access/blocs/jasa/jasa_bloc.dart';
 import 'package:rope_access/blocs/page/page_bloc.dart';
 import 'package:rope_access/blocs/product/product_bloc.dart';
 import 'package:rope_access/blocs/transaction/transaction_bloc.dart';
+import 'package:rope_access/pages/profile1.dart';
 import 'package:rope_access/repositories/auth/auth_repository.dart';
 import 'package:rope_access/repositories/cart/cart_repository.dart';
 import 'package:rope_access/repositories/jasa/jasa_repository.dart';
@@ -78,16 +79,20 @@ class _MyAppState extends State<MyApp> {
                     transactionRepository:
                         context.read<TransactionRepository>())),
           ],
-          child: MaterialApp.router(
-            theme: widget.appTheme.dark,
-            themeMode: ThemeMode.dark,
+          child: const MaterialApp(
             debugShowCheckedModeBanner: false,
-            routeInformationProvider:
-                widget.appRouter.router.routeInformationProvider,
-            routeInformationParser:
-                widget.appRouter.router.routeInformationParser,
-            routerDelegate: widget.appRouter.router.routerDelegate,
+            home: Profile1(),
           ),
+          // child: MaterialApp.router(
+          //   theme: widget.appTheme.dark,
+          //   themeMode: ThemeMode.dark,
+          //   debugShowCheckedModeBanner: false,
+          //   routeInformationProvider:
+          //       widget.appRouter.router.routeInformationProvider,
+          //   routeInformationParser:
+          //       widget.appRouter.router.routeInformationParser,
+          //   routerDelegate: widget.appRouter.router.routerDelegate,
+          // ),
         ));
   }
 
